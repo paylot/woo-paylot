@@ -445,7 +445,7 @@ class pyl_WC_Paylot_Gateway extends WC_Payment_Gateway_CC {
 		
 			
 
-		if ( true ){
+		if ( isset( $_REQUEST['paylot_txnref'] )  ){
 			$paylot_url = 'https://api.paylot.co/transactions/verify/' . $_REQUEST['paylot_txnref'];
 
 			$headers = array(
